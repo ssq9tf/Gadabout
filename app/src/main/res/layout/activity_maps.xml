@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="0px"
+        android:layout_weight="20"
+        android:id="@+id/imageView6"
+        android:src="@drawable/create"
+         />
+
+    <EditText
+        android:layout_height="0px"
+        android:layout_width="match_parent"
+        android:layout_weight="10"
+        android:id="@+id/editText"
+        android:hint="Write your clue here."
+        android:textColorHint="#DCDCDC"
+        android:textColor="@color/black"
+        android:textColorLink="#000000" />
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="40"
+        tools:context="com.treasurehunt.dinobros.treasurehunt.MapsActivity"
+        tools:layout="@layout/activity_maps" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear">
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="BACK TO MENU"
+            android:onClick="back"/>
+
+        <Button
+            android:id="@+id/set_clue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="SET CLLUE" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear2">
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="SAVE MAP"
+            android:onClick="saveMap"/>
+    </LinearLayout>
+</LinearLayout>
+
